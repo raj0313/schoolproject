@@ -25,8 +25,7 @@ export default class FirstScreen extends Component {
 	
 	 
   render() {
-	  
-    return (
+  return (
        <View style = {styles.container}>
 			<View style ={styles.logocontainer}>
 					<Image source={require('./logo.png')}   initWidth="300" initHeight="300"/>

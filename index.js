@@ -7,10 +7,17 @@
 		} from 'react-native';
 
 		import App from './App';
+		
 		import FirstScreen from './src/components/firstscreen.js';
 		import HomeScreen from './src/components/HomeScreen.js';
+		import SwicthScreen from './src/components/SwitchScreen.js';
+		import ConnectionInfo from './src/components/ConnectionInfo.js';
+		//import AppHeader from '.src/src/components/appheader.js'
+		import { NativeModules } from 'react-native';
 		import { StackNavigator } from 'react-navigation';
 		import { MenuProvider } from 'react-native-popup-menu';
+		
+		
 		export default class Index extends Component{
 		render(){
 		const {navigate} = this.props.navigation;
@@ -19,6 +26,8 @@
 			</View>
 			);
 			}
+
+			
 			}
 		const styles = StyleSheet.create({
 		regcontainer:{
@@ -27,7 +36,9 @@
 		}
 		})
 		const navigation = StackNavigator(
-		{
+		{		
+				//Connection:{screen:ConnectionInfo},
+				Switch:{screen : SwicthScreen},
 				Login :{screen : FirstScreen},
 				Home:{screen : HomeScreen},
 		},
@@ -38,7 +49,7 @@
 		
 				},
 			
-		);
+		); 
 		
 
 		AppRegistry.registerComponent('KiwiTaxis', () => navigation);

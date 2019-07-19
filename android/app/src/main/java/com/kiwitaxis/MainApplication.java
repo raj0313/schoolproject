@@ -12,6 +12,8 @@ import java.util.Arrays;
 import java.util.List;
 import com.arttitude360.reactnative.rngoogleplaces.RNGooglePlacesPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
+import com.showlocationservicesdialogbox.LocationServicesDialogBoxPackage;
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -27,7 +29,11 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
 		  new MapsPackage(),
       new RNGooglePlacesPackage(),
-      new VectorIconsPackage()
+      new VectorIconsPackage(),
+      new LocationServicesDialogBoxPackage()
+	  
+	  
+
      
       );
     }
