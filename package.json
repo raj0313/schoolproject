@@ -13,7 +13,7 @@
     "native-base": "^2.3.9",
     "react": "16.0.0",
     "react-addons-update": "^15.6.2",
-    "react-native": "0.51.0",
+    "react-native": "0.70.4",
     "react-native-android-location-services-dialog-box": "^2.4.4",
     "react-native-autocomplete-input": "^3.5.0",
     "react-native-base": "^1.1.0",
